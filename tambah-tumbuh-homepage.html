@@ -1,0 +1,399 @@
+<!doctype html>
+<html lang="id">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Tambah Tumbuh by Halo Sosial | Event 10.10</title>
+<meta name="description" content="Event 10.10 di Ideoworks: mat pilates, wellness talk, dan sharing session bareng praktisi industri kreatif. Daftar gratis, kuota terbatas.">
+<meta property="og:title" content="Tambah Tumbuh by Halo Sosial | Event 10.10">
+<meta property="og:description" content="Satu hari penuh untuk merawat tubuh, mengasah skill, dan terhubung dengan komunitas.">
+<meta property="og:type" content="website">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Instrument+Serif:ital@0;1&family=Manrope:wght@400;500;600;700&display=swap" rel="stylesheet">
+<style>
+/*
+  PENANDA COPY (hapus sebelum live)
+  .draft = draft copy dari kami, tinggal direview tim copy
+  .todo  = fakta yang belum ada (nama, alamat, jam, kontak), wajib diisi
+  Tombol "Sembunyikan penanda" di pojok kanan bawah hanya untuk preview.
+*/
+:root{
+  --bg:#FBFAF5; --bg-alt:#F1F0E8; --ink:#17191A; --ink-soft:#3F443F; --muted:#565B57;
+  --line:#E4E4DC; --line-strong:#C9C9BE; --lime:#C8F169; --green:#2F6B3F;
+  --mint:#DCEBD0; --peach:#FFD9C7; --white:#FFFFFF;
+  --serif:'Instrument Serif',Georgia,'Times New Roman',serif;
+  --sans:'Manrope',system-ui,-apple-system,'Segoe UI',sans-serif;
+  --pad:clamp(20px,6.7vw,96px);
+}
+*{box-sizing:border-box}
+html{scroll-padding-top:96px}
+@media (prefers-reduced-motion:no-preference){html{scroll-behavior:smooth}}
+body{margin:0;background:var(--bg);color:var(--ink);font-family:var(--sans);font-size:16px;line-height:1.6;-webkit-font-smoothing:antialiased}
+h1,h2,h3,p{margin:0}
+a{color:inherit}
+:focus-visible{outline:3px solid var(--ink);outline-offset:3px;border-radius:6px}
+.wrap{max-width:1248px;margin:0 auto}
+section{padding:clamp(72px,9vw,120px) var(--pad)}
+
+/* penanda copy */
+.draft{background:#DDF3B0;border-radius:4px;box-decoration-break:clone;-webkit-box-decoration-break:clone;padding:0 2px}
+.todo{display:inline-block;background:#FFE08A;color:#4A3300;padding:2px 8px;border-radius:6px;font:600 12px/1.6 ui-monospace,Menlo,Consolas,monospace}
+.ph{display:inline-block;background:rgba(255,255,255,.8);color:#33382F;padding:4px 10px;border-radius:6px;font:600 11px/1.5 ui-monospace,Menlo,Consolas,monospace}
+body.clean .draft{background:none;padding:0}
+body.clean .todo,body.clean .ph{outline:0}
+.toggle{position:fixed;right:16px;bottom:16px;z-index:50;min-height:44px;padding:0 18px;border-radius:999px;border:1px solid var(--ink);background:var(--white);color:var(--ink);font:600 13px/1 var(--sans);cursor:pointer}
+
+/* header */
+.site-header{position:sticky;top:0;z-index:20;background:var(--bg);border-bottom:1px solid var(--line)}
+.site-header .wrap{height:84px;display:flex;align-items:center;justify-content:space-between;gap:24px;padding:0 var(--pad);max-width:none}
+.brand{font-family:var(--serif);font-size:30px;line-height:1;text-decoration:none}
+.nav{display:flex;gap:36px}
+.nav a{font-weight:600;font-size:15px;text-decoration:none;padding:12px 0}
+.nav a:hover{color:var(--green)}
+.btn{display:inline-flex;align-items:center;justify-content:center;min-height:48px;padding:0 28px;border-radius:999px;background:var(--lime);color:var(--ink);font:700 16px/1 var(--sans);text-decoration:none;border:0;cursor:pointer}
+.btn:hover{background:#B9E455;color:var(--ink)}
+.btn-lg{min-height:58px;padding:0 40px;font-size:18px}
+
+/* hero */
+.hero{padding-top:clamp(40px,6vw,80px)}
+.hero .wrap{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:72px;align-items:center}
+.hero-copy{display:flex;flex-direction:column;gap:28px}
+.badge{align-self:flex-start;display:inline-flex;align-items:center;min-height:36px;padding:0 16px;border:1px solid var(--ink);border-radius:999px;font-weight:600;font-size:14px}
+.hero h1{font-family:var(--serif);font-weight:400;font-size:clamp(64px,9vw,112px);line-height:.94;letter-spacing:-.02em}
+.hero h1 em{color:var(--green)}
+.hero h1 .by{display:block;margin-top:16px;font-family:var(--sans);font-size:clamp(22px,2.6vw,34px);line-height:1.1;letter-spacing:0}
+.lead{max-width:540px;font-size:clamp(17px,1.5vw,20px);line-height:1.65;color:var(--ink-soft);text-wrap:pretty}
+.facts{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:20px;padding-top:24px;border-top:1px solid var(--line-strong);margin:0}
+.facts div{display:flex;flex-direction:column;gap:6px}
+.facts dt{font-size:13px;font-weight:600;color:var(--muted)}
+.facts dd{margin:0;font-weight:700;font-size:18px;line-height:1.3}
+.hero-visual{position:relative;min-height:600px;border-radius:28px;background:var(--lime);padding:32px;display:flex;flex-direction:column;justify-content:space-between;overflow:hidden}
+.hero-visual .tag{font-weight:600;font-size:15px}
+.hero-visual .big{font-family:var(--serif);font-style:italic;font-size:clamp(140px,20vw,280px);line-height:.8;letter-spacing:-.04em}
+
+/* section heads */
+.head{display:flex;flex-direction:column;gap:20px}
+h2{font-family:var(--serif);font-weight:400;font-size:clamp(44px,6vw,80px);line-height:1;letter-spacing:-.01em}
+
+/* tentang */
+.about-top{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:72px;align-items:start;margin-bottom:64px}
+.about-top p{font-size:clamp(17px,1.5vw,20px);line-height:1.75;color:var(--ink-soft);text-wrap:pretty;padding-top:12px}
+.pillars{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:24px}
+.pillar{background:var(--white);border:1px solid var(--line);border-radius:20px;overflow:hidden;display:flex;flex-direction:column}
+.pillar .img{height:240px;padding:16px;display:flex;align-items:flex-end}
+.pillar .body{padding:28px;display:flex;flex-direction:column;gap:12px}
+.pillar h3{font-family:var(--serif);font-weight:400;font-size:40px;line-height:1}
+.pillar p{color:var(--ink-soft)}
+
+/* rundown */
+.alt{background:var(--bg-alt);border-top:1px solid var(--line)}
+.rundown .wrap{display:grid;grid-template-columns:repeat(12,minmax(0,1fr));column-gap:24px;align-items:start}
+.rundown .head{grid-column:span 4}
+.rundown ol{grid-column:span 8;list-style:none;margin:0;padding:0;border-bottom:1px solid var(--line-strong)}
+.rundown li{display:grid;grid-template-columns:220px minmax(0,1fr);column-gap:32px;padding:32px 0;border-top:1px solid var(--line-strong)}
+.rundown .time{font-family:var(--serif);font-size:32px;line-height:1.15}
+.rundown .info{display:flex;flex-direction:column;gap:8px;align-items:flex-start}
+.rundown h3{font:700 24px/1.25 var(--sans)}
+.rundown .info p{color:var(--ink-soft)}
+
+/* pembicara */
+.speakers{display:flex;flex-direction:column;gap:56px}
+.speaker-grid{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:24px}
+.speaker{display:flex;gap:28px;padding:24px;background:var(--white);border:1px solid var(--line);border-radius:20px}
+.speaker .photo{flex-shrink:0;width:200px;height:260px;border-radius:14px;padding:12px;display:flex;align-items:flex-end}
+.speaker .meta{display:flex;flex-direction:column;gap:10px;align-items:flex-start;min-width:0}
+.speaker h3{font-family:var(--serif);font-weight:400;font-size:38px;line-height:1}
+.speaker .role{font-weight:600;font-size:14px;line-height:1.3;color:var(--muted)}
+.speaker p{font-size:15px;line-height:1.65;color:var(--ink-soft)}
+
+/* lokasi */
+.location .wrap{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:72px;align-items:center}
+.location .stack{display:flex;flex-direction:column;gap:28px}
+.location .stack>p{font-size:clamp(17px,1.5vw,20px);line-height:1.7;color:var(--ink-soft);text-wrap:pretty}
+.detail{margin:0;border-bottom:1px solid var(--line-strong)}
+.detail div{display:grid;grid-template-columns:150px minmax(0,1fr);column-gap:24px;padding:18px 0;border-top:1px solid var(--line-strong);align-items:start}
+.detail dt{font-weight:700;font-size:15px}
+.detail dd{margin:0;color:var(--ink-soft)}
+.map{min-height:520px;border-radius:28px;background:var(--mint);padding:24px;display:flex;align-items:flex-end}
+
+/* cta */
+.cta-box{background:var(--ink);color:var(--bg);border-radius:32px;padding:clamp(48px,8vw,96px) clamp(24px,6vw,72px);display:flex;flex-direction:column;align-items:center;gap:28px;text-align:center}
+.cta-box h2{max-width:900px;font-size:clamp(44px,7vw,88px)}
+.cta-box h2 em{color:var(--lime)}
+.cta-box p{max-width:620px;font-size:clamp(17px,1.5vw,20px);line-height:1.65;color:#D9DDD6;text-wrap:pretty}
+.cta-box .draft{background:rgba(200,241,105,.28)}
+
+/* footer */
+footer{padding:56px var(--pad);border-top:1px solid var(--line)}
+footer .wrap{display:flex;justify-content:space-between;align-items:flex-start;gap:40px}
+footer .col{display:flex;flex-direction:column;gap:12px}
+footer .col.right{align-items:flex-end;text-align:right}
+footer .name{font-family:var(--serif);font-size:32px;line-height:1}
+footer small{font-size:14px;color:var(--muted)}
+footer a{font-weight:600}
+
+/* responsive */
+@media (max-width:1024px){
+  .hero .wrap,.about-top,.location .wrap{grid-template-columns:1fr;gap:48px}
+  .hero-visual{min-height:420px}
+  .pillars{grid-template-columns:1fr}
+  .pillar{flex-direction:row}
+  .pillar .img{width:220px;height:auto;flex-shrink:0}
+  .rundown .wrap{display:flex;flex-direction:column;gap:48px}
+  .rundown ol{width:100%}
+  .speaker-grid{grid-template-columns:1fr}
+  .nav{display:none}
+}
+@media (max-width:640px){
+  .site-header .wrap{height:72px}
+  .brand{font-size:26px}
+  .btn{min-height:44px;padding:0 20px;font-size:15px}
+  .btn-lg{min-height:54px;font-size:17px}
+  .facts{grid-template-columns:1fr;gap:16px}
+  .hero-visual{min-height:340px;padding:24px}
+  .pillar{flex-direction:column}
+  .pillar .img{width:auto;height:200px}
+  .rundown li{grid-template-columns:1fr;row-gap:12px;padding:24px 0}
+  .rundown .time{font-size:28px}
+  .speaker{flex-direction:column}
+  .speaker .photo{width:100%;height:280px}
+  .detail div{grid-template-columns:1fr;row-gap:4px}
+  .map{min-height:320px}
+  footer .wrap{flex-direction:column}
+  footer .col.right{align-items:flex-start;text-align:left}
+  .toggle{bottom:12px;right:12px}
+}
+</style>
+</head>
+<body>
+
+<header class="site-header">
+  <div class="wrap">
+    <a class="brand" href="#top">Tambah <em>Tumbuh</em></a>
+    <nav class="nav" aria-label="Navigasi utama">
+      <a href="#tentang">Tentang</a>
+      <a href="#rundown">Rundown</a>
+      <a href="#pembicara">Pembicara</a>
+      <a href="#lokasi">Lokasi</a>
+    </nav>
+    <a class="btn" href="/register">Daftar Sekarang</a>
+  </div>
+</header>
+
+<main id="top">
+
+  <!-- 1. HERO -->
+  <section class="hero" aria-labelledby="hero-title">
+    <div class="wrap">
+      <div class="hero-copy">
+        <span class="badge">Event 10.10</span>
+        <h1 id="hero-title">Tambah <em>Tumbuh</em><span class="by">by Halo Sosial</span></h1>
+        <p class="lead">Satu hari penuh untuk merawat tubuh, mengasah skill, dan terhubung dengan komunitas, dari mat pilates pagi hingga sharing session bareng praktisi industri kreatif.</p>
+        <dl class="facts">
+          <div><dt>Tanggal</dt><dd>10 Oktober 2026</dd></div>
+          <div><dt>Lokasi</dt><dd>Ideoworks</dd></div>
+          <div><dt>Mulai</dt><dd>08.00 WIB</dd></div>
+        </dl>
+        <a class="btn btn-lg" href="/register" style="align-self:flex-start">Daftar Sekarang</a>
+      </div>
+      <div class="hero-visual">
+        <span class="tag">Real people, real connection</span>
+        <span class="big" aria-hidden="true">10.10</span>
+        <span class="ph" style="align-self:flex-start">[VISUAL HERO] foto atau ilustrasi real people, real connection, warna vibrant</span>
+      </div>
+    </div>
+  </section>
+
+  <!-- 2. TENTANG EVENT -->
+  <section id="tentang" class="alt" aria-labelledby="tentang-title" style="background:var(--bg);border-top:1px solid var(--line)">
+    <div class="wrap">
+      <div class="about-top">
+        <div class="head">
+          <h2 id="tentang-title">Apa itu Tambah Tumbuh?</h2>
+        </div>
+        <p><span class="draft">Tambah Tumbuh adalah rumah komunitas dari Halo Sosial, tempat orang-orang bertumbuh bersama, secara personal maupun sebagai bagian dari komunitas. Di sini, creative growth jadi ruang untuk berbagi pengalaman, bertukar perspektif, dan berkembang bareng.</span></p>
+      </div>
+      <div class="pillars">
+        <article class="pillar">
+          <div class="img" style="background:var(--mint)"><span class="ph">[VISUAL] nuansa hijau, asri, mat pilates</span></div>
+          <div class="body">
+            <h3>Wellness</h3>
+            <p><span class="draft">Mulai hari dengan gerak yang menyenangkan lewat mat pilates, lalu lanjut ngobrol soal kesehatan dan keseimbangan hidup di wellness talk.</span></p>
+          </div>
+        </article>
+        <article class="pillar">
+          <div class="img" style="background:var(--lime)"><span class="ph">[VISUAL] koneksi pembicara dan audiens</span></div>
+          <div class="body">
+            <h3>Sharing Session</h3>
+            <p><span class="draft">Belajar langsung dari praktisi soal photography dan content creation, dengan obrolan yang dekat dan gampang dipraktikkan.</span></p>
+          </div>
+        </article>
+        <article class="pillar">
+          <div class="img" style="background:var(--peach)"><span class="ph">[VISUAL] elemen helm dan motor</span></div>
+          <div class="body">
+            <h3>Komunitas</h3>
+            <p><span class="draft">Ketemu sesama pecinta otomotif dan kreator, tukar cerita, dan bangun jaringan baru bareng.</span></p>
+          </div>
+        </article>
+      </div>
+    </div>
+  </section>
+
+  <!-- 3. RUNDOWN -->
+  <section id="rundown" class="alt rundown" aria-labelledby="rundown-title">
+    <div class="wrap">
+      <div class="head">
+        <h2 id="rundown-title">Rundown Acara</h2>
+        <p class="lead" style="font-size:17px"><span class="draft">Empat sesi dalam satu pagi. Datang dari awal biar nggak ada yang terlewat.</span></p>
+      </div>
+      <ol>
+        <li>
+          <span class="time">08.00 Pagi (WIB)</span>
+          <div class="info">
+            <h3>Mat Pilates</h3>
+            <p>Sesi olahraga ringan untuk membuka acara.</p>
+          </div>
+        </li>
+        <li>
+          <div class="info">
+            <span class="time">Setelah Pilates</span>
+            <span class="todo">[JAM MULAI DAN SELESAI]</span>
+          </div>
+          <div class="info">
+            <h3>Wellness Talk</h3>
+            <p>Diskusi seputar kesehatan dan keseimbangan hidup.</p>
+            <span class="todo">[NAMA PEMBICARA WELLNESS TALK]</span>
+          </div>
+        </li>
+        <li>
+          <span class="time">09.00 sampai 10.00</span>
+          <div class="info">
+            <h3>Sharing Session: Photography</h3>
+            <p>Tips dasar fotografi untuk konten.</p>
+          </div>
+        </li>
+        <li>
+          <span class="time">10.00 sampai 11.00</span>
+          <div class="info">
+            <h3>Sharing Session: Content Creation</h3>
+            <p>Membahas personal branding dan masuk industri influencer bersama Arief (Famous Allstar).</p>
+            <span class="todo">[KONFIRMASI JAM SELESAI ACARA]</span>
+          </div>
+        </li>
+      </ol>
+    </div>
+  </section>
+
+  <!-- 4. PEMBICARA -->
+  <section id="pembicara" aria-labelledby="pembicara-title">
+    <div class="wrap speakers">
+      <div class="head">
+        <h2 id="pembicara-title">Profil Pembicara</h2>
+        <p class="lead" style="font-size:17px"><span class="draft">Empat orang yang siap berbagi cerita dan pengalamannya bareng kamu.</span></p>
+      </div>
+      <div class="speaker-grid">
+        <article class="speaker">
+          <div class="photo" style="background:var(--mint)"><span class="ph">[FOTO] Aries Lukman</span></div>
+          <div class="meta">
+            <h3>Aries Lukman</h3>
+            <span class="role">Iphonesia</span>
+            <span class="todo">[JABATAN]</span>
+            <p>Aries Lukman dari Iphonesia akan berbagi wawasan seputar dunia fotografi dan kreativitas menggunakan smartphone, serta bagaimana memaksimalkan teknologi untuk menghasilkan konten yang menarik.</p>
+          </div>
+        </article>
+        <article class="speaker">
+          <div class="photo" style="background:var(--lime)"><span class="ph">[FOTO] Arief</span></div>
+          <div class="meta">
+            <h3>Arief <span class="todo">[NAMA LENGKAP]</span></h3>
+            <span class="role">Co-CEO Famous Allstar</span>
+            <p>Mengelola jaringan lebih dari 120 ribu influencer aktif dan pernah bekerja sama dengan brand besar seperti P&amp;G dan Unilever. Arief akan berbagi tips membangun personal brand dan memahami cara masuk ke industri influencer bagi kamu yang ingin memulai karier sebagai content creator.</p>
+          </div>
+        </article>
+        <article class="speaker">
+          <div class="photo" style="background:var(--peach)"><span class="ph">[FOTO] Adis Tyzer</span></div>
+          <div class="meta">
+            <h3>Adis Tyzer</h3>
+            <span class="role">Influencer</span>
+            <span class="todo">[KONFIRMASI SESI YANG DIISI]</span>
+            <p>Adis Tyzer akan berbagi pengalaman dan perspektifnya sebagai influencer dalam membangun personal branding, mengembangkan kreativitas, serta menciptakan konten yang relevan dan menarik bagi audiens.</p>
+          </div>
+        </article>
+        <article class="speaker">
+          <div class="photo" style="background:var(--line)"><span class="ph">[FOTO] Peksi Cahyo</span></div>
+          <div class="meta">
+            <h3>Peksi Cahyo</h3>
+            <span class="role">Influencer &amp; Photographer</span>
+            <span class="todo">[KONFIRMASI SESI YANG DIISI]</span>
+            <p>Peksi Cahyo akan berbagi pengalaman di dunia fotografi dan content creation, mulai dari mengembangkan kreativitas visual hingga menghasilkan foto yang menarik dan bercerita melalui lensa.</p>
+          </div>
+        </article>
+      </div>
+    </div>
+  </section>
+
+  <!-- 5. LOKASI -->
+  <section id="lokasi" class="alt location" aria-labelledby="lokasi-title">
+    <div class="wrap">
+      <div class="stack">
+        <h2 id="lokasi-title">Lokasi Acara</h2>
+        <p>Event 10.10 berlangsung langsung di kantor Ideoworks, ruang kerja yang disulap jadi tempat berkumpul, belajar, dan terhubung.</p>
+        <dl class="detail">
+          <div>
+            <dt>Alamat</dt>
+            <dd><span class="todo">[ALAMAT LENGKAP IDEOWORKS]</span></dd>
+          </div>
+          <div>
+            <dt>Parkir dan akses</dt>
+            <dd><span class="draft">Parkir tersedia di</span> <span class="todo">[LOKASI PARKIR]</span><span class="draft">. Dari pintu masuk, ikuti arah menuju</span> <span class="todo">[LANTAI ATAU RUANG ACARA]</span><span class="draft">.</span></dd>
+          </div>
+          <div>
+            <dt>Kontak</dt>
+            <dd><span class="draft">Bingung arah? Hubungi</span> <span class="todo">[NAMA PANITIA DAN NOMOR WA]</span><span class="draft">.</span></dd>
+          </div>
+        </dl>
+      </div>
+      <div class="map"><span class="ph">[EMBED GOOGLE MAPS] lokasi Ideoworks</span></div>
+    </div>
+  </section>
+
+  <!-- 6. CTA -->
+  <section id="daftar" aria-labelledby="daftar-title">
+    <div class="wrap">
+      <div class="cta-box">
+        <h2 id="daftar-title">Yuk, Gabung di <em>Tambah Tumbuh!</em></h2>
+        <p>Kuota terbatas, daftarkan dirimu sekarang dan jadi bagian dari pengalaman “real people, real connection”. <span class="draft">Pendaftaran gratis.</span></p>
+        <a class="btn btn-lg" href="/register">Daftar Sekarang</a>
+      </div>
+    </div>
+  </section>
+
+</main>
+
+<footer>
+  <div class="wrap">
+    <div class="col">
+      <span class="name">Tambah <em>Tumbuh</em></span>
+      <small>by Halo Sosial</small>
+    </div>
+    <div class="col right">
+      <span><span class="draft">Ikuti kabar terbaru di Instagram</span> <a href="https://www.instagram.com/halososial/">@halososial</a></span>
+      <span class="todo">[KONTAK PANITIA]</span>
+      <small>© 2026 Tambah Tumbuh by Halo Sosial</small>
+    </div>
+  </div>
+</footer>
+
+<button type="button" class="toggle" id="toggle" aria-pressed="false">Sembunyikan penanda</button>
+<script>
+  (function () {
+    var b = document.getElementById('toggle');
+    b.addEventListener('click', function () {
+      var clean = document.body.classList.toggle('clean');
+      b.setAttribute('aria-pressed', clean ? 'true' : 'false');
+      b.textContent = clean ? 'Tampilkan penanda' : 'Sembunyikan penanda';
+    });
+  })();
+</script>
+</body>
+</html>
