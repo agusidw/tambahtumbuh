@@ -1,0 +1,172 @@
+<!doctype html>
+<html lang="id" xmlns="http://www.w3.org/1999/xhtml" xmlns:v="urn:schemas-microsoft-com:vml" xmlns:o="urn:schemas-microsoft-com:office:office">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta http-equiv="X-UA-Compatible" content="IE=edge">
+<title>Pendaftaran diterima, Halo Sosial Meet Up</title>
+<!--
+  DEV NOTES
+  Subject email    : Yes! Kamu terdaftar di Halo Sosial Meet Up (Event 10.10)
+  Trigger          : dikirim otomatis begitu form register.html berhasil submit
+  Merge field      : {{nama}} nama depan peserta
+                      {{sesi_terpilih}} daftar sesi yang dicentang, pisahkan koma. Kalau field sesi di form
+                      dikosongkan/dianggap ikut semua, ganti fallback jadi "Semua sesi" di backend
+  Highlight        : blok hijau muda = draft copy siap review, blok kuning [ ] = data yang wajib diisi
+                      sebelum kirim. Hapus keduanya (span.draft / span.todo) saat template sudah final
+  Kompatibilitas   : ditulis table based dan inline style untuk Outlook/Gmail/Apple Mail. Gambar logo
+                      belum disisipkan, ganti area [LOGO] dengan <img> beralamat URL yang di-host publik
+-->
+<style>
+  body,table,td{font-family:Georgia,'Times New Roman',serif}
+  img{border:0;line-height:100%;outline:none;text-decoration:none}
+  table{border-collapse:collapse}
+  a{text-decoration:none}
+  .sans{font-family:Helvetica,Arial,sans-serif}
+  .draft{background-color:#DDF3B0;padding:1px 3px;border-radius:3px}
+  .todo{display:inline-block;background-color:#FFE08A;color:#4A3300;padding:2px 8px;border-radius:6px;font-family:'Courier New',monospace;font-weight:bold;font-size:12px}
+  @media only screen and (max-width:600px){
+    .container{width:100% !important}
+    .px{padding-left:20px !important;padding-right:20px !important}
+    .stack{display:block !important;width:100% !important}
+    .h1{font-size:32px !important}
+  }
+</style>
+</head>
+<body style="margin:0;padding:0;background-color:#F1F0E8;">
+<div style="display:none;max-height:0;overflow:hidden;opacity:0;">
+  <span class="draft">Yes! Kamu resmi terdaftar di Halo Sosial Meet Up, Event 10.10 di Ideoworks. Sampai ketemu tanggal 10 Oktober!</span>
+</div>
+
+<table role="presentation" width="100%" cellpadding="0" cellspacing="0" style="background-color:#F1F0E8;">
+<tr><td align="center" style="padding:32px 16px;">
+
+<table role="presentation" class="container" width="600" cellpadding="0" cellspacing="0" style="width:600px;max-width:600px;background-color:#FBFAF5;border-radius:20px;overflow:hidden;">
+
+  <!-- header -->
+  <tr>
+    <td class="px" align="center" style="padding:28px 40px;border-bottom:1px solid #E4E4DC;">
+      <span style="font-size:22px;color:#17191A;">Halo Sosial <i style="color:#2F6B3F;">Meet Up</i></span>
+    </td>
+  </tr>
+
+  <!-- hero -->
+  <tr>
+    <td class="px" style="padding:40px 40px 8px;">
+      <table role="presentation" width="100%" cellpadding="0" cellspacing="0"><tr>
+        <td style="width:56px;height:56px;background-color:#C8F169;border-radius:50%;text-align:center;vertical-align:middle;font-family:Helvetica,Arial,sans-serif;font-size:26px;color:#17191A;">&#10003;</td>
+      </tr></table>
+    </td>
+  </tr>
+  <tr>
+    <td class="px" style="padding:20px 40px 0;">
+      <p class="h1" style="margin:0;font-size:40px;line-height:1.1;color:#17191A;">Pendaftaranmu <i style="color:#2F6B3F;">sudah kami terima!</i></p>
+    </td>
+  </tr>
+  <tr>
+    <td class="px sans" style="padding:20px 40px 0;font-size:16px;line-height:1.6;color:#3F443F;">
+      <span class="draft">Halo {{nama}}, terima kasih sudah daftar di Halo Sosial Meet Up. Kuota kamu sudah kami amankan, tinggal siapkan diri buat tanggal 10 Oktober nanti!</span>
+    </td>
+  </tr>
+
+  <!-- event card -->
+  <tr>
+    <td class="px" style="padding:32px 40px 0;">
+      <table role="presentation" width="100%" cellpadding="0" cellspacing="0" style="background-color:#17191A;border-radius:18px;">
+        <tr><td style="padding:28px 28px 8px;">
+          <span style="font-size:24px;color:#FBFAF5;">Detail acara</span>
+        </td></tr>
+        <tr><td class="sans" style="padding:14px 28px;border-top:1px solid rgba(251,250,245,.16);font-size:13px;color:#C9CEC6;">Acara</td></tr>
+        <tr><td class="sans" style="padding:0 28px 14px;font-size:15px;font-weight:bold;color:#FBFAF5;">Halo Sosial Meet Up, Event 10.10</td></tr>
+        <tr><td class="sans" style="padding:14px 28px;border-top:1px solid rgba(251,250,245,.16);font-size:13px;color:#C9CEC6;">Tanggal</td></tr>
+        <tr><td class="sans" style="padding:0 28px 14px;font-size:15px;font-weight:bold;color:#FBFAF5;">10 Oktober 2026</td></tr>
+        <tr><td class="sans" style="padding:14px 28px;border-top:1px solid rgba(251,250,245,.16);font-size:13px;color:#C9CEC6;">Waktu</td></tr>
+        <tr><td class="sans" style="padding:0 28px 14px;font-size:15px;font-weight:bold;color:#FBFAF5;">08.00 s.d. 12.00 WIB</td></tr>
+        <tr><td class="sans" style="padding:14px 28px;border-top:1px solid rgba(251,250,245,.16);font-size:13px;color:#C9CEC6;">Lokasi</td></tr>
+        <tr><td class="sans" style="padding:0 28px 14px;font-size:15px;font-weight:bold;color:#FBFAF5;">Ideoworks, <span class="todo">[ALAMAT LENGKAP]</span></td></tr>
+        <tr><td class="sans" style="padding:14px 28px;border-top:1px solid rgba(251,250,245,.16);font-size:13px;color:#C9CEC6;">Sesi yang kamu pilih</td></tr>
+        <tr><td class="sans" style="padding:0 28px 24px;font-size:15px;font-weight:bold;color:#FBFAF5;">{{sesi_terpilih}}</td></tr>
+      </table>
+    </td>
+  </tr>
+
+  <!-- CTA kalender -->
+  <tr>
+    <td class="px sans" align="center" style="padding:28px 40px 8px;">
+      <table role="presentation" cellpadding="0" cellspacing="0"><tr>
+        <td style="border-radius:999px;background-color:#C8F169;">
+          <a href="https://calendar.google.com/calendar/render?action=TEMPLATE&amp;text=Halo+Sosial+Meet+Up+%7C+Event+10.10&amp;dates=20261010T010000Z/20261010T050000Z&amp;location=Ideoworks&amp;details=Event+10.10+Halo+Sosial+Meet+Up" style="display:inline-block;padding:16px 32px;font-size:16px;font-weight:bold;color:#17191A;">Tambahkan ke Kalender</a>
+        </td>
+      </tr></table>
+    </td>
+  </tr>
+
+  <!-- rundown -->
+  <tr>
+    <td class="px" style="padding:40px 40px 4px;">
+      <span style="font-size:26px;color:#17191A;">Rundown hari H</span>
+    </td>
+  </tr>
+  <tr><td class="px sans" style="padding:16px 40px 0;font-size:14px;color:#3F443F;border-top:1px solid #E4E4DC;">
+    <table role="presentation" width="100%" cellpadding="0" cellspacing="0">
+      <tr>
+        <td style="width:96px;padding:12px 0;font-weight:bold;color:#17191A;vertical-align:top;">08.00</td>
+        <td style="padding:12px 0;vertical-align:top;">Mat Pilates</td>
+      </tr>
+      <tr>
+        <td style="width:96px;padding:12px 0;font-weight:bold;color:#17191A;vertical-align:top;border-top:1px solid #E4E4DC;">s.d. 09.00</td>
+        <td style="padding:12px 0;vertical-align:top;border-top:1px solid #E4E4DC;">Wellness Talk</td>
+      </tr>
+      <tr>
+        <td style="width:96px;padding:12px 0;font-weight:bold;color:#17191A;vertical-align:top;border-top:1px solid #E4E4DC;">09.00 s.d. 10.00</td>
+        <td style="padding:12px 0;vertical-align:top;border-top:1px solid #E4E4DC;">Sharing Session: Photography</td>
+      </tr>
+      <tr>
+        <td style="width:96px;padding:12px 0;font-weight:bold;color:#17191A;vertical-align:top;border-top:1px solid #E4E4DC;">10.00 s.d. 11.00</td>
+        <td style="padding:12px 0;vertical-align:top;border-top:1px solid #E4E4DC;">Sharing Session: Content Creation</td>
+      </tr>
+      <tr>
+        <td style="width:96px;padding:12px 0 24px;font-weight:bold;color:#17191A;vertical-align:top;border-top:1px solid #E4E4DC;">11.00 s.d. 12.00</td>
+        <td style="padding:12px 0 24px;vertical-align:top;border-top:1px solid #E4E4DC;">Networking &amp; Penutupan</td>
+      </tr>
+    </table>
+  </td></tr>
+
+  <!-- siap siap -->
+  <tr>
+    <td class="px sans" style="padding:8px 40px 0;font-size:16px;line-height:1.7;color:#3F443F;">
+      <span style="font-family:Georgia,serif;font-size:22px;color:#17191A;display:block;margin-bottom:12px;">Sebelum hari H</span>
+      <span class="draft">Datang 15 menit lebih awal biar sempat registrasi ulang di lokasi. Pakai baju yang nyaman buat gerak, terutama untuk sesi Mat Pilates.</span> <span class="todo">[KONFIRMASI: peserta perlu bawa matras sendiri atau disediakan panitia?]</span>
+    </td>
+  </tr>
+
+  <!-- ajak teman -->
+  <tr>
+    <td class="px sans" align="center" style="padding:32px 40px 0;font-size:15px;color:#3F443F;">
+      <span class="draft">Ajak temanmu biar makin rame.</span>
+      <br><br>
+      <a href="https://wa.me/?text=Ayo%20ikut%20Halo%20Sosial%20Meet%20Up%20Event%2010.10%20di%20Ideoworks!%20Daftar%20di%20https%3A%2F%2Fhalososial.id%2Fmeetup" style="display:inline-block;padding:12px 24px;border:1.5px solid #17191A;border-radius:999px;color:#17191A;font-weight:bold;">Bagikan lewat WhatsApp</a>
+      <span class="todo">[GANTI DOMAIN SESUAI URL LIVE]</span>
+    </td>
+  </tr>
+
+  <!-- footer -->
+  <tr>
+    <td class="px sans" style="padding:40px 40px 28px;">
+      <div style="border-top:1px solid #E4E4DC;padding-top:20px;font-size:13px;line-height:1.6;color:#565B57;">
+        Ikuti kabar terbaru di Instagram <a href="https://www.instagram.com/halososial/" style="color:#2F6B3F;font-weight:bold;">@halososial</a>.
+        <br>
+        Ada pertanyaan? Hubungi <span class="todo">[NAMA PANITIA DAN NOMOR WA]</span>.
+        <br><br>
+        Email ini dikirim karena kamu mendaftar di Halo Sosial Meet Up.
+        <br>
+        &copy; 2026 Halo Sosial Meet Up
+      </div>
+    </td>
+  </tr>
+
+</table>
+</td></tr>
+</table>
+</body>
+</html>

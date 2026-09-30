@@ -1,0 +1,103 @@
+<!doctype html>
+<html lang="id" xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Pendaftar baru, Halo Sosial Meet Up</title>
+<!--
+  DEV NOTES
+  Subject email    : Pendaftar baru: {{nama}}, Halo Sosial Meet Up
+  Penerima         : email internal/admin panitia, dikirim bersamaan dengan email konfirmasi ke user
+  Merge field      : {{nama}} {{email}} {{no_wa}} {{sesi_terpilih}} {{waktu_submit}}
+                      {{waktu_submit}} format dd MMM yyyy, HH.mm WIB
+  Highlight        : blok kuning [ ] = link atau data yang wajib diisi sebelum dipakai. Hapus span.todo
+                      saat template final
+  Desain           : sengaja dibuat lebih ringkas dan fungsional dibanding email ke user, karena ini
+                      email operasional internal
+-->
+<style>
+  body,table,td{font-family:Helvetica,Arial,sans-serif}
+  table{border-collapse:collapse}
+  a{text-decoration:none}
+  .todo{display:inline-block;background-color:#FFE08A;color:#4A3300;padding:2px 8px;border-radius:6px;font-family:'Courier New',monospace;font-weight:bold;font-size:12px}
+  @media only screen and (max-width:600px){
+    .container{width:100% !important}
+    .px{padding-left:20px !important;padding-right:20px !important}
+  }
+</style>
+</head>
+<body style="margin:0;padding:0;background-color:#F1F0E8;">
+
+<table role="presentation" width="100%" cellpadding="0" cellspacing="0" style="background-color:#F1F0E8;">
+<tr><td align="center" style="padding:32px 16px;">
+
+<table role="presentation" class="container" width="560" cellpadding="0" cellspacing="0" style="width:560px;max-width:560px;background-color:#FBFAF5;border-radius:16px;overflow:hidden;">
+
+  <!-- header -->
+  <tr>
+    <td class="px" style="padding:24px 32px;background-color:#17191A;">
+      <span style="font-size:15px;font-weight:bold;color:#C8F169;letter-spacing:.04em;">HALO SOSIAL MEET UP</span>
+      <br>
+      <span style="font-size:13px;color:#C9CEC6;">Notifikasi pendaftar baru</span>
+    </td>
+  </tr>
+
+  <!-- intro -->
+  <tr>
+    <td class="px" style="padding:24px 32px 8px;font-size:15px;line-height:1.6;color:#3F443F;">
+      Ada pendaftar baru untuk Event 10.10. Detail lengkapnya ada di bawah.
+    </td>
+  </tr>
+
+  <!-- data table -->
+  <tr>
+    <td class="px" style="padding:16px 32px 0;">
+      <table role="presentation" width="100%" cellpadding="0" cellspacing="0" style="border:1px solid #E4E4DC;border-radius:12px;overflow:hidden;">
+        <tr>
+          <td style="width:150px;padding:14px 16px;background-color:#F1F0E8;font-size:13px;font-weight:bold;color:#565B57;border-bottom:1px solid #E4E4DC;">Nama</td>
+          <td style="padding:14px 16px;font-size:15px;color:#17191A;border-bottom:1px solid #E4E4DC;">{{nama}}</td>
+        </tr>
+        <tr>
+          <td style="width:150px;padding:14px 16px;background-color:#F1F0E8;font-size:13px;font-weight:bold;color:#565B57;border-bottom:1px solid #E4E4DC;">Email</td>
+          <td style="padding:14px 16px;font-size:15px;color:#17191A;border-bottom:1px solid #E4E4DC;">{{email}}</td>
+        </tr>
+        <tr>
+          <td style="width:150px;padding:14px 16px;background-color:#F1F0E8;font-size:13px;font-weight:bold;color:#565B57;border-bottom:1px solid #E4E4DC;">No WhatsApp</td>
+          <td style="padding:14px 16px;font-size:15px;color:#17191A;border-bottom:1px solid #E4E4DC;">{{no_wa}}</td>
+        </tr>
+        <tr>
+          <td style="width:150px;padding:14px 16px;background-color:#F1F0E8;font-size:13px;font-weight:bold;color:#565B57;border-bottom:1px solid #E4E4DC;">Sesi dipilih</td>
+          <td style="padding:14px 16px;font-size:15px;color:#17191A;border-bottom:1px solid #E4E4DC;">{{sesi_terpilih}}</td>
+        </tr>
+        <tr>
+          <td style="width:150px;padding:14px 16px;background-color:#F1F0E8;font-size:13px;font-weight:bold;color:#565B57;">Waktu daftar</td>
+          <td style="padding:14px 16px;font-size:15px;color:#17191A;">{{waktu_submit}}</td>
+        </tr>
+      </table>
+    </td>
+  </tr>
+
+  <!-- CTA -->
+  <tr>
+    <td class="px" style="padding:24px 32px 4px;">
+      <table role="presentation" cellpadding="0" cellspacing="0"><tr>
+        <td style="border-radius:999px;background-color:#C8F169;">
+          <a href="#" style="display:inline-block;padding:12px 24px;font-size:14px;font-weight:bold;color:#17191A;">Lihat semua pendaftar</a>
+        </td>
+      </tr></table>
+      <div style="margin-top:8px;"><span class="todo">[LINK KE SHEET ATAU DASHBOARD PENDAFTAR]</span></div>
+    </td>
+  </tr>
+
+  <!-- footer -->
+  <tr>
+    <td class="px" style="padding:24px 32px 24px;border-top:1px solid #E4E4DC;margin-top:16px;font-size:12px;color:#565B57;">
+      Notifikasi otomatis dari form pendaftaran Halo Sosial Meet Up. Tidak perlu dibalas.
+    </td>
+  </tr>
+
+</table>
+</td></tr>
+</table>
+</body>
+</html>
